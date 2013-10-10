@@ -1,0 +1,137 @@
+004     @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     lcd
+008     lcdlat
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-029 cif
+02A-02D aux
+02E-031 cif2
+032-035 aux2
+036-037 @ITOF.P1
+036     lcd_init.i
+036-039 @PRINTF_L32D_93FPFPF.P1
+036     @PSTRINGCN7_93.P2
+036     MAIN.@SCRATCH1
+037     lcd_init.@SCRATCH1
+037     @PSTRINGCN7_93.@SCRATCH1
+038     @PSTRINGCN7_93.@SCRATCH2
+039     @PSTRINGCN7_93.@SCRATCH3
+03A     @PRINTF_L32D_93FPFPF.P1
+03B     @PRINTF_L32D_93FPFPF.@SCRATCH1
+03C     @PRINTF_L32D_93FPFPF.@SCRATCH2
+03D     @PRINTF_L32D_93FPFPF.@SCRATCH3
+03E     @PRINTF_L32D_93FPFPF.@SCRATCH4
+03F     @PRINTF_L32D_93FPFPF.@SCRATCH5
+040     @PRINTF_L32D_93FPFPF.@SCRATCH6
+041     @PRINTF_L32D_93FPFPF.@SCRATCH7
+042     @PRINTF_L32D_93FPFPF.@SCRATCH8
+043-046 @MULFF.P1
+043-046 @DIV3232.P2
+043-046 @FTOSD.P3
+043     lcd_putc.c
+044     lcd_gotoxy.x
+044     @delay_ms1.P1
+045     lcd_gotoxy.y
+046     lcd_gotoxy.address
+047-04A @MULFF.P1
+047-04A @DIV3232.P2
+047     lcd_gotoxy.@SCRATCH1
+047     @FTOSD.@SCRATCH1
+048     lcd_send_byte.address
+049     lcd_send_byte.n
+04A     lcd_read_byte.low
+04A     lcd_send_byte.@SCRATCH1
+04B     lcd_read_byte.high
+04B     lcd_send_nibble.n
+04B     @MULFF.@SCRATCH1
+04B     @DIV3232.@SCRATCH1
+04C     lcd_read_byte.@SCRATCH1
+04C     @MULFF.@SCRATCH2
+04C     @DIV3232.@SCRATCH2
+04D     @MULFF.@SCRATCH3
+04D     @DIV3232.@SCRATCH3
+04E     @MULFF.@SCRATCH4
+04E     @DIV3232.@SCRATCH4
+04F     @MULFF.@SCRATCH5
+04F     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+001A  @delay_ms1
+0004  LCD_INIT_STRING
+0042  lcd_read_byte
+003B  lcd_read_nibble
+002F  lcd_send_nibble
+0041  lcd_send_byte
+007C  lcd_init
+013E  lcd_gotoxy
+0150  lcd_putc
+00AC  @ITOF
+00C9  @MULFF
+02EC  MAIN
+000C  @const496
+0175  @PSTRINGCN7_93
+022C  @FTOSD
+01C3  @DIV3232
+0205  @PRINTF_L32D_93FPFPF
+0013  @const507
+02EC  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\DiegO\Desktop\Practicas C SE\practica10\
+
+Project Files:
+    practica10.c
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+
+Units:
+    C:\Users\DiegO\Desktop\Practicas C SE\practica10\practica10 (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      practica10.err
+    Ext Symbols: practica10.esym
+    INHX8:       practica10.hex
+    Symbols:     practica10.sym
+    List:        practica10.lst
+    Debug/COFF:  practica10.cof
+    Project:     practica10.PJT
+    Call Tree:   practica10.tre
+    Statistics:  practica10.sta

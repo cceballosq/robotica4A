@@ -1,0 +1,4 @@
+>>> Warning 202 "practica10.c" Line 8(13,16): Variable never used:   aux
+>>> Warning 202 "practica10.c" Line 8(26,30): Variable never used:   aux2
+      Memory usage:   ROM=12%      RAM=8% - 14%
+      0 Errors,  2 Warnings.
